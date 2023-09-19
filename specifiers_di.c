@@ -1,4 +1,4 @@
-#include "custom_io.h"  /* Include the custom header file */
+#include "main.h"  /* Include the custom header file */
 #include <unistd.h>     /* For read and write system calls */
 
 /* Custom function to read an integer */
