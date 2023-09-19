@@ -1,3 +1,10 @@
+/**
+*custom_read_integer - ...
+*custom_print_integer - ...
+*Return: integer
+*
+*/
+
 #include "main.h"  /* Include the custom header file */
 #include <unistd.h>     /* For read and write system calls */
 
@@ -51,21 +58,4 @@ void custom_print_integer(int number) {
     for (int i = index - 1; i >= 0; i--) {
         write(STDOUT_FILENO, &buffer[i], 1);
     }
-}
-
-int main(void) {
-    int number;
-
-    /* Prompt the user for input */
-    write(STDOUT_FILENO, "Enter an integer: ", 18);
-
-    /* Read the integer using custom function */
-    number = custom_read_integer();
-
-    /* Print the integer using custom function */
-    custom_print_integer(number);
-
-    write(STDOUT_FILENO, "\n", 1);  /* Add a newline character */
-
-    return 0;
 }
