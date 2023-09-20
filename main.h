@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+<<<<<<< HEAD
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -115,3 +116,13 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */
+=======
+
+#include <unistd.h>  /* For read and write system calls */
+
+/* Function prototypes */
+int custom_read_integer(void);
+void custom_print_integer(int number);
+
+#endif /*MAIN_H */
+>>>>>>> 461d5342dc76955d3c45ac47b37c86686f1b0ab8
